@@ -14,8 +14,8 @@ public class CorsFilter implements ContainerResponseFilter {
                        ContainerResponseContext responseContext) throws IOException {
 
         responseContext.getHeaders().add(
-                //"Access-Control-Allow-Origin", "https://abcd-ndjr.onrender.com"
-            "Access-Control-Allow-Origin", "https://abcd-ndjr.onrender"
+                "Access-Control-Allow-Origin", "https://abcd-ndjr.onrender.com"
+            //"Access-Control-Allow-Origin", "https://abcd-ndjr.onrender"
         );
         responseContext.getHeaders().add(
                 "Access-Control-Allow-Credentials", "true"
@@ -26,7 +26,7 @@ public class CorsFilter implements ContainerResponseFilter {
         );
         responseContext.getHeaders().add(
                 "Access-Control-Allow-Methods",
-                " GET, POST, PUT, DELETE, OPTIONS, HEAD"
+                "POST, PUT, DELETE, OPTIONS, HEAD"
         );
         responseContext.getHeaders().add(
                 "Access-Control-Max-Age", "86400"
