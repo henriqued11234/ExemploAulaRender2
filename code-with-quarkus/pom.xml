@@ -31,15 +31,11 @@
         </dependencies>
     </dependencyManagement>
     
-    <dependencies>
-             <dependency>
+   <dependency>
     <groupId>io.quarkus</groupId>
     <artifactId>quarkus-http</artifactId>
 </dependency>
-        <dependency>
-            <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-vertx-http</artifactId>
-        </dependency>
+        
         <dependency>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-resteasy-jackson</artifactId>
