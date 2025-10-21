@@ -31,11 +31,12 @@
         </dependencies>
     </dependencyManagement>
     
-   <dependency>
-    <groupId>io.quarkus</groupId>
-    <artifactId>quarkus-http</artifactId>
-</dependency>
-        
+    <!-- CORREÇÃO: Todas as dependências devem estar dentro do bloco <dependencies> -->
+    <dependencies>
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-http</artifactId>
+        </dependency>
         <dependency>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-resteasy-jackson</artifactId>
