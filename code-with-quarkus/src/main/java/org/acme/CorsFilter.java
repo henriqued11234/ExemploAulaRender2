@@ -14,7 +14,8 @@ public class CorsFilter implements ContainerResponseFilter {
                        ContainerResponseContext responseContext) throws IOException {
 
         responseContext.getHeaders().add(
-                "Access-Control-Allow-Origin", "https://abcd-ndjr.onrender.com"
+                //"Access-Control-Allow-Origin", "https://abcd-ndjr.onrender.com"
+            "Access-Control-Allow-Origin", "https://abcd-ndjr.onrender"
         );
         responseContext.getHeaders().add(
                 "Access-Control-Allow-Credentials", "true"
